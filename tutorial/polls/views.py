@@ -11,11 +11,8 @@ class IndexView(generic.ListView):
     template_name = 'polls/index.html'
     context_object_name = 'latest_question_list'
     # ListView generic view uses a default template called <app name>/<model name>_list.html.
-<<<<<<< HEAD
     # For ListView, the automatically generated context variable is question_list
-    # To override this we provide the context_object_name attribute, specifying that we want to use latest_question_list instead. 
-=======
->>>>>>> 1fcb7c9335ccd3fae97489f25f31945b2d7a0c3e
+    # To override this we provide the context_object_name attribute, specifying that we want to use latest_question_list instead.
 
     def get_queryset(self):
         # Return the last five published questions.
