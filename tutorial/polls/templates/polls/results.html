@@ -1,4 +1,5 @@
 <h1>{{ question.question_text }}</h1>
+<!-- For DetailView the question variable is provided automatically – since we’re using a Django model (Question) -->
 
 <ul>
   {% for choice in question.choice_set.all %}
